@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Mysql_table</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Chance of Admit Prediction</h1>
+
+    <div class="form" style = "text-align: center; font-size: large;">
+        <form action="/predict1" method="POST">
+            <input type="number" name="Gre_score" id="Gre_score" placeholder="Gre_score">
+            <input type="number" name="TOEFL_score" id="TOEFL_score" placeholder="TOEFL_score">
+            <input type="number" name="University_ratings" id="University_ratings" placeholder="University_ratings">
+            <input type="number" name="SOP" id="SOP" placeholder="SOP">
+            <input type="number" name="LOR" id="LOR" placeholder="LOR">
+            <input type="number" name="CGPA" id="CGPA" placeholder="CGPA">
+            <input type="number" name="Research" id="Research" placeholder="Research" step="any">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+{% endblock %}
