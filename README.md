@@ -80,3 +80,10 @@ To pull docker image we follow
 docker pull <user_name>/<repository_name>
 
 ```
+
+# **You can run this project using Dockers image**
+
+You can pull the docker image and run it in the docker container using the following command in your terminal
+```
+docker pull zeeshankhan29/adm_predict
+```
