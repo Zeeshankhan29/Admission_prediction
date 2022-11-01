@@ -1,9 +1,8 @@
 # Admission_prediction
 
 
-Scraper_details would look something like this
 
-image.png
+
 
 Creating virtual environment in your project folder
 ```
